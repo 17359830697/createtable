@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1190</width>
+    <height>728</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="src.qrc">
+    <normaloff>:/src/prefix/src/tablemaker.png</normaloff>:/src/prefix/src/tablemaker.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout"/>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1190</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_file">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="save"/>
+    <addaction name="separator"/>
+    <addaction name="exit"/>
+   </widget>
+   <widget class="QMenu" name="menu_edit">
+    <property name="title">
+     <string>编辑(&amp;E)</string>
+    </property>
+    <widget class="QMenu" name="menu">
+     <property name="title">
+      <string>主题</string>
+     </property>
+     <property name="icon">
+      <iconset resource="src.qrc">
+       <normaloff>:/src/prefix/src/style.png</normaloff>:/src/prefix/src/style.png</iconset>
+     </property>
+     <addaction name="Light"/>
+     <addaction name="BlueCerulean"/>
+     <addaction name="Dark"/>
+     <addaction name="BrownSand"/>
+     <addaction name="BlueNcs"/>
+     <addaction name="HighContrast"/>
+     <addaction name="BlueIcy"/>
+     <addaction name="Qt"/>
+    </widget>
+    <addaction name="menu"/>
+   </widget>
+   <widget class="QMenu" name="menu_bulid">
+    <property name="title">
+     <string>构建(&amp;B)</string>
+    </property>
+    <addaction name="polyline"/>
+    <addaction name="separator"/>
+    <addaction name="bargraph"/>
+    <addaction name="separator"/>
+    <addaction name="pie"/>
+    <addaction name="separator"/>
+    <addaction name="curve"/>
+    <addaction name="separator"/>
+    <addaction name="area"/>
+    <addaction name="separator"/>
+    <addaction name="scatter"/>
+    <addaction name="separator"/>
+    <addaction name="doughont"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>帮助(&amp;H)</string>
+    </property>
+    <addaction name="about"/>
+   </widget>
+   <addaction name="menu_file"/>
+   <addaction name="menu_edit"/>
+   <addaction name="menu_bulid"/>
+   <addaction name="menu_H"/>
+  </widget>
+  <action name="polyline">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/prefix/src/polyline.png</normaloff>:/src/prefix/src/polyline.png</iconset>
+   </property>
+   <property name="text">
+    <string>折线图</string>
+   </property>
+  </action>
+  <action name="bargraph">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/prefix/src/bargraph.png</normaloff>:/src/prefix/src/bargraph.png</iconset>
+   </property>
+   <property name="text">
+    <string>柱状图</string>
+   </property>
+  </action>
+  <action name="pie">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/prefix/src/pie.png</normaloff>:/src/prefix/src/pie.png</iconset>
+   </property>
+   <property name="text">
+    <string>饼图</string>
+   </property>
+  </action>
+  <action name="curve">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/prefix/src/cruve.png</normaloff>:/src/prefix/src/cruve.png</iconset>
+   </property>
+   <property name="text">
+    <string>曲线图</string>
+   </property>
+  </action>
+  <action name="save">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/prefix/src/save.png</normaloff>:/src/prefix/src/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存(&amp;S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="exit">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/prefix/src/exit.png</normaloff>:/src/prefix/src/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出(&amp;X)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="about">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/prefix/src/about.png</normaloff>:/src/prefix/src/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于软件(P)</string>
+   </property>
+  </action>
+  <action name="area">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/prefix/src/area.png</normaloff>:/src/prefix/src/area.png</iconset>
+   </property>
+   <property name="text">
+    <string>面积图</string>
+   </property>
+  </action>
+  <action name="scatter">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/prefix/src/scatter.png</normaloff>:/src/prefix/src/scatter.png</iconset>
+   </property>
+   <property name="text">
+    <string>散点图</string>
+   </property>
+  </action>
+  <action name="Light">
+   <property name="text">
+    <string>灯光</string>
+   </property>
+  </action>
+  <action name="BlueCerulean">
+   <property name="text">
+    <string>天蓝色</string>
+   </property>
+  </action>
+  <action name="Dark">
+   <property name="text">
+    <string>黑暗</string>
+   </property>
+  </action>
+  <action name="BrownSand">
+   <property name="text">
+    <string>沙棕色</string>
+   </property>
+  </action>
+  <action name="BlueNcs">
+   <property name="text">
+    <string>蓝色</string>
+   </property>
+  </action>
+  <action name="HighContrast">
+   <property name="text">
+    <string>高对比度</string>
+   </property>
+  </action>
+  <action name="BlueIcy">
+   <property name="text">
+    <string>冰蓝色</string>
+   </property>
+  </action>
+  <action name="Qt">
+   <property name="text">
+    <string>Qt</string>
+   </property>
+  </action>
+  <action name="doughont">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/prefix/src/duocn.png</normaloff>:/src/prefix/src/duocn.png</iconset>
+   </property>
+   <property name="text">
+    <string>圆环图</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
+ <connections/>
+</ui>

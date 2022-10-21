@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/src/prefix">
+        <file>src/about.png</file>
+        <file>src/bargraph.png</file>
+        <file>src/cruve.png</file>
+        <file>src/exit.png</file>
+        <file>src/font.png</file>
+        <file>src/pie.png</file>
+        <file>src/polyline.png</file>
+        <file>src/save.png</file>
+        <file>src/style.png</file>
+        <file>src/tablemaker.png</file>
+        <file>src/area.png</file>
+        <file>src/scatter.png</file>
+        <file>src/duocn.png</file>
+        <file>src/create.ico</file>
+        <file>about.txt</file>
+    </qresource>
+</RCC>
